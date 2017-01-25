@@ -1,4 +1,4 @@
-# simple-cruds-springboot-example
+# SIMPLE CRUDS SPRINGBOOT EXAMPLE
 
 Project Simple CRUDS for table Mahasiswa, was made by Springboot Framework
 
