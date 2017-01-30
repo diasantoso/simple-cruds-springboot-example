@@ -39,4 +39,8 @@ public class MahasiswaServices {
         List<Mahasiswa> list = mahasiswaRepository.getDias(cari);
         return list;
     }
+
+    public Boolean cekLogin(String nama, String npm) {
+        return mahasiswaRepository.cekLogin(nama,npm);
+    }
 }

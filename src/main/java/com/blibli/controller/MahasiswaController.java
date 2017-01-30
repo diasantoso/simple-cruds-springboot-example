@@ -57,4 +57,14 @@ public class MahasiswaController {
             model.addAttribute("mahasiswa", mahasiswaServices.cariMhs(cari));
         return "tampilmhs";
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.POST)
+    public String cekLogin(String nama, String npm){
+        Boolean cek = mahasiswaServices.cekLogin(nama,npm);
+
+        if(cek==true)
+            return "redirect:/tampilmhs";
+        else
+            return "redirect:/";
+    }
 }

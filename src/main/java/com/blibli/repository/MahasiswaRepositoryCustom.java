@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface MahasiswaRepositoryCustom {
     List<Mahasiswa> getDias(String text);
+    Boolean cekLogin(String nama, String npm);
 }
